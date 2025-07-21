@@ -29,7 +29,10 @@ class GeneratedRecipe {
     };
   }
 
-  factory GeneratedRecipe.fromFirestore(Map<String, dynamic> data, String docId) {
+  factory GeneratedRecipe.fromFirestore(
+    Map<String, dynamic> data,
+    String docId,
+  ) {
     return GeneratedRecipe(
       id: docId,
       inputId: data['inputId'] ?? '',

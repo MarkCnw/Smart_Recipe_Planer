@@ -23,7 +23,10 @@ class UserInput {
     };
   }
 
-  factory UserInput.fromFirestore(Map<String, dynamic> data, String docId) {
+  factory UserInput.fromFirestore(
+    Map<String, dynamic> data,
+    String docId,
+  ) {
     return UserInput(
       id: docId,
       imageUrl: data['imageUrl'],
